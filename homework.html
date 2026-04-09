@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1> Colours </h1>
+    <p id="r1"></p>
+    <p id="r2"></p>y
+    <p id="r3"></p>
+    <p id="r4"></p>
+
+    <script>
+        var colors = ["lavander", "red", "light blue", "teel", "pastal", "purple", "navy"];
+        document.getElementById("r1").innerHTML = colors.join(" * ");
+
+        colors.pop();
+        document.getElementById("r2").innerHTML = colors;
+
+        colors.pop();
+        document.getElementById("r3").innerHTML = colors;
+
+        colors.push("strawberry");
+        document.getElementById("r4").innerHTML = colors;
+
+
+    </script>
+
+</body>
+
+</html>
